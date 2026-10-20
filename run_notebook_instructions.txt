@@ -1,0 +1,16 @@
+LANDSLIDE-RISK MONITOR — RUN IN JUPYTER
+
+1. Install Python 3.10+ and Jupyter Notebook/JupyterLab.
+2. Extract the ZIP to a folder.
+3. Open a terminal in that folder and run:
+   pip install -r requirements.txt
+   jupyter notebook
+4. Open Landslide_Risk_Monitor.ipynb and choose Kernel > Restart & Run All.
+5. It runs first on data/sample_landslide_data.csv.
+6. To use your real data, put Raw_Sensor_Data_Landslide_Monitoring.xlsx inside the data folder and run all cells again.
+
+IMPORTANT:
+The supplied sensor spreadsheet was previously found to have no verified risk label column.
+The notebook's generated Low/Medium/High labels are proxy labels for demonstration only.
+A Random Forest trained on proxy labels learns the proxy rule, not verified landslide outcomes.
+Raindrop readings are not automatically equivalent to rainfall in millimetres.
