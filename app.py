@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 PROJECT_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "landslide_random_forest.joblib"
+MODEL_PATH = PROJECT_DIR / "landslide_random_forest.joblib"
 SAMPLE_PATH = PROJECT_DIR / "data" / "sample_landslide_data.csv"
 
 FEATURES = ["Soil_Moisture", "Vibration", "Rainfall"]
